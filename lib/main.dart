@@ -8,8 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.black,
         body: SafeArea(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'SourceSansPro',
                 fontSize: 20.0,
-                color: Colors.teal.shade100,
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 2.5,
               ),
@@ -40,21 +41,22 @@ class MyApp extends StatelessWidget {
               width: 150,
               child: Divider(
                 color : Colors.teal.shade100,
+                height: 20,
               ),
             ),
             Card(
-
+              color: Colors.blueGrey.shade900,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: ListTile(
                 leading: Icon(
                   Icons.phone,
                   size: 30.0,
-                  color: Colors.teal,
+                  color: Colors.white,
                 ),
                 title: Text(
                   '06 89 04 37 09',
                   style: TextStyle(
-                    color: Colors.teal.shade900,
+                    color: Colors.white,
                     fontFamily: 'SourceSansPro',
                     fontSize: 25.0,
                   ),
@@ -62,17 +64,18 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
+              color: Colors.blueGrey.shade900,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: ListTile(
                 leading: Icon(
                   Icons.mail,
                   size: 30.0,
-                  color: Colors.teal,
+                  color: Colors.white,
                 ),
                 title: Text(
                   'elios.cama@utbm.fr',
                   style: TextStyle(
-                    color: Colors.teal.shade900,
+                    color: Colors.white,
                     fontFamily: 'SourceSansPro',
                     fontSize: 25.0,
                   ),
